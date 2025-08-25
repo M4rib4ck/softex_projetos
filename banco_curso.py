@@ -19,7 +19,7 @@ while True:
         break
 
     while True:
-        opcao = (input("Escolha uma opção: \n")\
+        opcao = input("Escolha uma opção: \n"\
         "1- Ver saldo.\n"\
         "2- Sacar valor.\n"\
         "3- Depositar.\n"\
@@ -37,13 +37,28 @@ while True:
                 print("Saldo insuficiente!")
 
         elif opcao == 3:
-            pass
+            depositar = float(input("Insira o valor a ser depositado: "))
+            if depositar > 0:
+                 saldo += depositar
+            else:
+                 print("Valor inválido!")
         elif opcao == 4:
-            pass
+            boleto = float(input("Entre com o valor do boleto: "))
+            if boleto < (saldo_a + limite_saldo_n):
+                 saldo -= boleto
+            else:
+                 print("Saldo insuficiente!")
         elif opcao == 5:
-            pass
+            senha_antiga = input("Digite a senha antiga:")
+            senha_nova1 = input("Digite a senha nova:")
+            senha_nova2 = input("Digite a senha nova novamente:")
+            if senha_antiga == senha_c and senha_nova1 == senha_nova2:
+                 senha_c = senha_nova1
+                 print("Senha atualizada com sucesso!")
+            else: 
+                 print("Senha inválida!!")
         elif opcao == 6:
             print("Atendimento finalizado!")
             break
         else:
-            pass
+            print("Opção inválida")
