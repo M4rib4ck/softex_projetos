@@ -10,7 +10,7 @@ while True:
     valido = False
     if not num.isdigit():
         print("Número inválido. Por favor digite apenas números.")
-        continue
+        continue #evita rodar código desnecessário.
     elif len(num) != 11:
         print("Número inválido! Deve conter 11 dígitos!")
     else:
