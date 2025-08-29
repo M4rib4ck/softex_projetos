@@ -10,6 +10,7 @@ while True:
     valido = False
     if not num.isdigit():
         print("Número inválido. Por favor digite apenas números.")
+        continue
     elif len(num) != 11:
         print("Número inválido! Deve conter 11 dígitos!")
     else:
@@ -29,3 +30,4 @@ while True:
         segunda = num[7:]
         formatado = (f"({ddd}){primeira}-{segunda}")
         print(f"Número válido!! {formatado}")
+        break
