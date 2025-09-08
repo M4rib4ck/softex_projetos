@@ -2,7 +2,7 @@ registro_acesso = []
 usuarios_sucesso = set()
 usuarios_falha = set()
 
-while True:
+while True: #deveria usar o try
     print("𐔌 . ⋮ MENU PRINCIPAL .ᐟ ֹ ₊ ꒱\n",
           "\n",
           "1- Inserir novo acesso!\n",
@@ -14,7 +14,7 @@ while True:
 
     if not menu.isdigit() or int(menu) not in [1, 2, 3]:
         print("Opção inválida. Tente novamente.\n")
-        continue
+        continue  #para o loop, mas n interrompe. descarta o registro pra um novo do 0
 
     if menu == "3":
         break
@@ -66,9 +66,9 @@ while True:
     duracao = input("Digite a duração da sessão em minutos: ")
     if duracao.isdigit():
         duracao = int(duracao)
-    else:
+    else: #except valueerror (tentar usar)
         print("Duração inválida! Tente novamente.")
-        continue
+        continue 
 
     registro = (usuario_nome, status, duracao)
     registro_acesso.append(registro)
