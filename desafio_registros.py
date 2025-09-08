@@ -86,4 +86,4 @@ while True:
         if status == "sucesso":
             tempo += duracao
 
-    print(f"𐔌 . ⋮ TEMPO TOTAL DE ATIVIDADE: .ᐟ ֹ ₊ ꒱\n \nTempo total de acesso permitido: {tempo} minutos\n")
+    print(f"𐔌 . ⋮ TEMPO TOTAL DE ATIVIDADE: .ᐟ ֹ ₊ ꒱\nTempo total de acesso permitido: {tempo} minutos\n")
