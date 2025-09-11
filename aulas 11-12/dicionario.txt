@@ -1,0 +1,67 @@
+* dicionario comum, pasta com conteúdos.
+{chave: valor, chave_2: valor_2,...}
+
+minha_lista = ["banana", "maçã", "uva"]
+
+#dicionarios organizam dados por relação (chave)  #parece conjunto mas se diferencia pela estrutura
+
+preço = {maçã: 2.50, "banana": 0.75}
+
+dados_usuário = {} #dicionário vazio
+
+
+dados_carro ={
+    "marca": "Forde",
+    "modelo": "Fusion",
+    "ano": 2018
+}
+print(dados_carro["marca"]) # saida: forde
+
+* se a chave n existir da (keyerror)
+
+
+# .get() é usada para evitar erros:
+dados_carro.get("valor", "não informado") # como n tem valor, retorna ("não informado")
+
+** adicionar um novo para
+dados_carro = {"marca": "toyota", "modelo": "xx"}
+
+dados_carro["cor"]: "Preto" #adiciona agora a cor do dados_carro
+
+\\\\
+
+livro = {"titulo": "1984" , "autor": "George Orwell"}
+del livro["autor"] # tira o autor, usado para mostar dados sem senha (ex)
+
+\\\
+
+.pop() 
+autor_removido.pop() = livro.pop("Autor") #saida: (""George Orwell"")
+                                         # saida: "1989"
+
+\\\ 
+
+item = {"arroz": "14.00" , "feijão": "9.75"}
+for preço in preçps.values(): # pega só os valores
+
+for item, preço in precços.item():              #saida "o preço do xxxxx é xxxxx"
+    print(f"O preco do {item} é R${preço.2f}")  # devolve uma tupla: saida: ("nome"), ("Maria")
+
+\\\\
+
+** integrando com lista
+
+estudantes = [
+    {"nome": Ana , "matricula": "202514973"}
+    {"nome": bruno , "matricula": "202514983"}
+]
+
+#nome do segundo
+print(estudante[1]["nome"]) # saida = bruno ## pq conta do 0,1,2
+
+for estudante in estudantes:
+print(estudante[0]["nome"])
+
+
+\\\
+
