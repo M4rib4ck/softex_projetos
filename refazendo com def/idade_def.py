@@ -16,5 +16,6 @@ def classificar_idade(idade):
         return "𐔌 . ⋮ Adulto .ᐟ ֹ ₊ ꒱"
     else:
         return "𐔌 . ⋮ Idoso .ᐟ ֹ ₊ ꒱"
+    
 resultado = classificar_idade(idade)
 print("A idade digitada é de um(a):"), print(resultado)
