@@ -13,6 +13,6 @@ while True:
     if opção != "sim":
         break
 
-print("\nPessoas cadastradas:")
+print("Pessoas cadastradas:")
 for p in lista_de_pessoas:
-    print(p)
+    print(p) 
